@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journey towards DevOps culture</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h1, h2, h3 {
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 0.5em; text-align: left; }
+      .remark-slide-content { font-size: 4em; padding: 1em; }
+      .remark-slide-content img { max-width: 80%; }
+      .small-image img { width: 40%; }
+      .topic { opacity: 0.5; position: absolute; width: 100%; top: 0.2em; left: 0 }
+      ul, li { text-align: left; }
+      .red { color: red; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle
+---
+Journey towards DevOps culture
+???
+Hi, welcome to Emarsys!
+
+I hope you enjoy yourself
+---
+Who am I?
+???
+My name is Gabor, and I’ve been working here for 1 and a half years as a developer.
+
+I one thing I can tell you is that it has been a wild ride!
+---
+What is this about?
+???
+This is the story of me learning to do DevOps and the effort Emarsys is making to keep up DevOps culture.
+
+The reason I wanted to do this presentation is that I’m still struggling to define what exactly DevOps is, and from my research I feel that I’m not the only one.
+
+We have seen two remarkable presentations and now we know that DevOps has probably something to do with containerization and continuous integration.
+
+So let's see what wikipedia has to say about it
+
+DevOps is a culture, movement or practice that emphasizes the collaboration and communication of both software developers and other information-technology (IT) professionals while automating the process of software delivery and infrastructure changes.
+
+That's interesting, but lacks concrete examples.
+
+Instead I will show you what DevOps means here at Emarsys, what it means to me, and how I think it can help you develop great software.
+---
+The past
+
+![](./dino.jpg)
+???
+I have divided this story up to three parts, past, present and future.
+
+The past details how things were going in the old days. This part is mostly concerned with our legacy, which is a monolithic application built on a LAMP stack, hosted on internal infrastructure.
+---
+The present
+
+![](./now.jpg)
+???
+The present is how most of the newly developed services look like. Here, as you can see I’m talking about services. These are mostly feature services, which means that they are not as focused as a microservice, but are sized in a way that a single team can operate them. Most of these are operated on external platforms, with only some hosted inside.
+---
+The future
+
+![](./delorean.jpg)
+???
+The future is about evolving. As I have recently joined a team developing a new product, I can show you what challenges does developing a data oriented application pose and what solutions does DevOps offer to these.
+
+This does not mean however that the things discussed in the past or present part are obsolete or the result of bad design (or sometimes the result of any upfront design at all as we are following extreme programming).
+
+
+
+---
+The past
+---
+The beginning
+???
+When I came to the company, I believed that DevOps was a job title and actually did some research on how to become a DevOps guy.
+
+Little helped that there was an actual team called DevOps.
+
+To understand the story, you have to know that this team mostly worked on the legacy part of our codebase, one that has been worked on by many people by that time.
+
+I had the luck to spend my test days in this team, and it all made sense right away.
+
+I understood that DevOps means that you are both a developer and an operations guy, developing your own tools, and modifying the almighty production code as operation events require you to do so.
+
+As you can see this definition is somewhat biased towards the operations part, and it lacks one of the most important parts of DevOps, ownership.
+---
+
+
+---
+?!
+    </textarea>
+    <script src="./remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({ratio: '16:9'});
+    </script>
+  </body>
+</html>
