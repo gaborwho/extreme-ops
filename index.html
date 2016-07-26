@@ -74,30 +74,210 @@ The future
 The future is about evolving. As I have recently joined a team developing a new product, I can show you what challenges does developing a data oriented application pose and what solutions does DevOps offer to these.
 
 This does not mean however that the things discussed in the past or present part are obsolete or the result of bad design (or sometimes the result of any upfront design at all as we are following extreme programming).
+---
+Disclaimer
+???
+xp - agile
 
-
-
+flat hierarchy - resp of super
 ---
 The past
----
-The beginning
 ???
 When I came to the company, I believed that DevOps was a job title and actually did some research on how to become a DevOps guy.
 
-Little helped that there was an actual team called DevOps.
-
-To understand the story, you have to know that this team mostly worked on the legacy part of our codebase, one that has been worked on by many people by that time.
-
-I had the luck to spend my test days in this team, and it all made sense right away.
-
-I understood that DevOps means that you are both a developer and an operations guy, developing your own tools, and modifying the almighty production code as operation events require you to do so.
-
-As you can see this definition is somewhat biased towards the operations part, and it lacks one of the most important parts of DevOps, ownership.
+You know, someone who is not especially developing, or operating, but “doing devops”.
 ---
+The DevOps team
+???
+Little helped the fact that there was an actual team called DevOps.
 
+To understand the story, you have to know that this team mostly worked
 
+on the legacy part of our codebase, one that has been worked on by many people by that time
+
+and one that was actively developed my many other people.
+
+After I had the luck to spend my test days in this team, it all made sense right away.
 ---
-?!
+The DevOps guy
+???
+I understood that DevOps means that you are both a developer and an operations guy,
+
+developing your own tools, and
+
+modifying the almighty production code as operation events require you to do so
+
+- this was not necessarily a good definition.
+---
+Ownership
+???
+As you can see this definition is somewhat biased towards the operations part, and
+
+it lacks one of the most important parts of DevOps, ownership.
+---
+Automation Center
+???
+After getting hired, I joined a team called Automation Center.
+
+Our job was to develop and operate a product meant to - this will be surprising - automate things.
+
+As we are offering a marketing service, this means mostly sending messages.
+
+And you can believe me - we are sending lots of them.
+---
+Part-time job
+???
+I said develop and operate, and this was true - mostly.
+
+For sure it didn’t happen that we sent out more or less messages than intended.
+
+As this was part of the legacy codebase, we had a hard time keeping up with the operation efforts,
+
+and at this time we were only operating it while in the office.
+---
+It’s ops problem now
+???
+At the end of the day we passed it to the DevOps team,
+
+who were operating it while we were out of the office.
+
+We saw that they were tired, but hey, it’s their job, whatever.
+---
+We need to change
+???
+As our development efforts slowly began to shift towards fixing bugs and scaling the system,
+
+we wanted to introduce bigger changes - like architectural ones - but changing is risking and we didn’t want to take risk.
+
+Hey, there was a separate team, and for the bigger part of the day, they were owning this service.
+---
+WAT?
+???
+So there was a team called who was mostly operating,
+
+and there was another team who was mostly developing code,
+
+and there wasn’t a real owner.
+
+So in order to be able to scale the system, we took over the operation of the service.
+---
+Pain
+???
+This is when we really started to feel the pain.
+
+Lots of manual interventions, manual prioritization of job processing, jobs failing due to communication errors.
+
+These were not left unresolved because the other team was lazy
+
+- they had their own tasks - did I mention ownership?
+---
+The way out
+???
+Rome wasn’t built in a day.
+
+After taking over operation, we had the chance to start to gently automate operational pain
+
+to allow us to focus on moving forward instead of just maintaining.
+
+First we created some tools that allowed us to handle operational events with some buttons instead of running SQL queries in the middle of the night
+
+- did you ever try that? You are just waked by an alert, and it's a service someone is relying on - no pressure.
+
+As we got more and more familiar with the errors it allowed us to automate the buttons and
+
+finally get that good night of sleep while in duty.
+---
+The present
+???
+I have to make a confession here: it’s actually more like the past for me, as I’m in a different team now. (Sorry Ferenc).
+
+But it’s still the recommended way to do things.
+---
+Custom Development
+???
+After working for half a year in the Automation Center Team,
+
+I was offered a part in a newly forming team, aiming to ensure exceptional customer needs are fulfilled, called the Custom Development.
+
+Our first mission was to build up an infrastructure and architecture on which we can make custom developments.
+---
+Where do we start?
+???
+We were smart enough to know that we didn’t really want to invent anything new here.
+
+We also knew that we needed such flexibility and autonomy that our internal infrastructure could not offer us.
+
+We didn’t have to think much, as we had the possibility to simply copy what some of the other teams were already doing and
+
+build on Heroku and our company homebrew Node JS microframework, called the Boar Stack.
+---
+No idea wat I’m doing
+???
+We didn’t have experience with Node JS.
+
+Like - at all.
+
+Or much with client side javascript.
+
+But we had the Force.
+---
+Boar stack
+???
+This stack is something that the company JavaScript community maintains and develops,
+
+and is the result of many hours of work done by the different teams.
+
+First these were some packages of a single team, extracted following the DRY principle - do not repeat yourself
+
+and it slowly got out of control, and it now spans multiple teams.
+---
+Integrated
+???
+Actually the stack involves more than just Yet Another NodeJS Framework™.
+
+Other than the backend and frontend framework and knowhow, we got a whole integrated package,
+
+including a testing framework, a deployment tool, logging and monitoring infrastucture, some database engines
+
+and did I mention the knowhow?
+
+You probably think now that we are developing lots of tools unnecessarily, but this is not true - most of the components were proven, ready solutions and services created by others.
+
+The reason I include them here is that we as a company had to learn how to apply them, and our team didn't have to take this effort.
+---
+It’s all right there
+???
+So the biggest advantage of the stack came from the fact that it was all there,
+
+not only the parts included in the nodejs package and it’s dependencies,
+
+but in the head of some great developers.
+
+And it was there waiting for us to use it.
+---
+Getting the feel of it
+???
+speed up
+
+communicate
+
+return
+---
+The future
+???
+As I mentioned, after the challenges of doing Custom Development I was again offered part in a new team.
+---
+Exploring new horizons
+???
+This time the challenge is to create a new product out of the woods.
+
+The product is based on Data Science and Artificial Intelligence - some interesting buzzwords for you
+---
+New technology
+---
+Questions?
+
+Comments?
     </textarea>
     <script src="./remark-latest.min.js">
     </script>
