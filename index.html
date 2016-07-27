@@ -26,6 +26,9 @@
       .remark-slide-content h1 {
         font-size: 2em;
       }
+      .remark-notes p {
+        font-size: 0.9em;
+      }
       .remark-slide-content img { max-width: 80%; }
       .remark-slide-number { font-size: 0.5em; }
       .small-image img { width: 40%; }
@@ -178,8 +181,6 @@ is devops a job title?
 ---
 #DevOps
 ???
-9:00
-
 team
 
 team name no help
@@ -323,73 +324,85 @@ new architecture
 ---
 #Where do we start?
 ???
-We were smart enough to know that we didn’t really want to invent anything new here.
+1 min!
 
-We also knew that we needed such flexibility and autonomy that our internal infrastructure could not offer us.
+do not invent
 
-We didn’t have to think much, as we had the possibility to simply copy what some of the other teams were already doing and
+internal infra not flexible
 
-build on Heroku and our company homebrew Node JS microframework, called the Boar Stack.
+hey boar
 ---
-No idea wat I’m doing
+![](./noidea.jpg)
 ???
-We didn’t have experience with Node JS.
+no experience with js
 
-Like - at all.
+no node
 
-Or much with client side javascript.
+no client
 
-But we had the Force.
+no infra
+
+little ops
 ---
-Boar stack
+#Boar stack
 ???
-This stack is something that the company JavaScript community maintains and develops,
+community maintained
 
-and is the result of many hours of work done by the different teams.
+lots of work
 
-First these were some packages of a single team, extracted following the DRY principle - do not repeat yourself
-
-and it slowly got out of control, and it now spans multiple teams.
+dry
 ---
-Integrated
+#Toolchain
 ???
-Actually the stack involves more than just Yet Another NodeJS Framework™.
+not just dev
 
-Other than the backend and frontend framework and knowhow, we got a whole integrated package,
+testing
 
-including a testing framework, a deployment tool, logging and monitoring infrastucture, some database engines
+deployment
 
-and did I mention the knowhow?
+logging and monitoring
 
-You probably think now that we are developing lots of tools unnecessarily, but this is not true - most of the components were proven, ready solutions and services created by others.
+database
 
-The reason I include them here is that we as a company had to learn how to apply them, and our team didn't have to take this effort.
+knowhow!
 ---
-It’s all right there
+#Architecture
 ???
-So the biggest advantage of the stack came from the fact that it was all there,
+arch is key
 
-not only the parts included in the nodejs package and it’s dependencies,
+arch guidelines
 
-but in the head of some great developers.
+small services
 
-And it was there waiting for us to use it.
+feature service
 
-The present is how most of the newly developed services look like. Here, as you can see I’m talking about services. These are mostly feature services, which means that they are not as focused as a microservice, but are sized in a way that a single team can operate them. Most of these are operated on external platforms, with only some hosted inside.
+the twelve-factor app
+
+ops same team
 ---
-Getting the feel of it
+#Knowledge
 ???
-speed up
+it was there
 
-communicate
+people were there
 
-return
+available
 ---
-The future
+#Lesson learned
+???
+toolchain allowed to move forward
+---
+#.yellow[Lesson 3]: autonomy
 ???
 As I mentioned, after the challenges of doing Custom Development I was again offered part in a new team.
 ---
-Exploring new horizons
+#DevOps
+???
+dev, ops
+
++toolchain
+---
+#Artificial Intelligence Marketing
 ???
 This time the challenge is to create a new product out of the woods.
 
