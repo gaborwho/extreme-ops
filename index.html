@@ -10,19 +10,32 @@
         font-family: 'Canaro', 'Montserrat', sans-serif;
         font-weight: 600;
       }
+      .remark-container {
+        background-color: #002838;
+      }
+      .remark-slide-scaler {
+        box-shadow: none;
+      }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 0.5em; text-align: left; }
       .remark-slide-content {
-        font-size: 6em;
+        font-size: 3em;
         padding: 1em;
         background-color: #002838;
         color: #fff;
       }
+      .remark-slide-content h1 {
+        font-size: 2em;
+      }
       .remark-slide-content img { max-width: 80%; }
-      .remark-slide-number { font-size: 25%; }
+      .remark-slide-number { font-size: 0.5em; }
       .small-image img { width: 40%; }
       .topic { opacity: 0.5; position: absolute; width: 100%; top: 0.2em; left: 0 }
       ul, li { text-align: left; }
       .red { color: red; }
+      .green { color: #41ba77; }
+      .yellow { color: #d9e506; }
+      .blue { color: #6984d1; }
+      .big { font-size: 2em; }
     </style>
   </head>
   <body>
@@ -31,11 +44,9 @@ name: inverse
 layout: true
 class: center, middle
 ---
-Journey towards DevOps culture
+#Journey towards DevOps culture
 ???
 welcome
-
-first time solo
 
 like pizza, beer cold
 
@@ -43,21 +54,23 @@ enjoy!
 ---
 ![](./emarsys.png)
 ???
-my name is... developer
+my name is... developer 1-1/2
 
 wild ride
 
 wonderful people
 
+wonderful things
+
 speak experience
 
 me learning, Emarsys effort
 ---
-DevOps
+#DevOps
 ???
 2:00
 
-struggle definition, not just me
+hard to define
 
 container + CI
 
@@ -65,67 +78,91 @@ wiki: collaboration + communication, automating
 
 show in practice
 ---
-The past
+#The journey
 
-![](./dino.jpg)
+Automation Center
+
+Custom Development
+
+Artificial Intelligence Marketing
 ???
-I have divided this story up to three parts, past, present and future.
+5:00
+me and emarsys
 
-The past details how things were going in the old days. This part is mostly concerned with our legacy, which is a monolithic application built on a LAMP stack, hosted on internal infrastructure.
+past, present, future
+
+automation center
+
+- product
+
+- lots of messages
+
+- legacy, monolithic, lamp
+
+- internal infrastructure
+
+custom development
+
+- focused needs
+
+- independent, small services
+
+- external infrastructure
+
+artificial intelligence marketing
+
+- product development
+
+- data oriented
+
+- external infrastructure
 ---
-The present
-
-![](./now.jpg)
+#.big[XP]
 ???
-The present is how most of the newly developed services look like. Here, as you can see I’m talking about services. These are mostly feature services, which means that they are not as focused as a microservice, but are sized in a way that a single team can operate them. Most of these are operated on external platforms, with only some hosted inside.
+not an RPG
 ---
-The future
-
-![](./delorean.jpg)
+#E.blue[x]treme .blue[p]rogramming
 ???
-The future is about evolving. As I have recently joined a team developing a new product, I can show you what challenges does developing a data oriented application pose and what solutions does DevOps offer to these.
+6:00
 
-This does not mean however that the things discussed in the past or present part are obsolete or the result of bad design (or sometimes the result of any upfront design at all as we are following extreme programming).
----
-Disclaimer
-???
 xp - agile
 
-flat hierarchy - resp of super
+flat hierarchy - common responsibility
+
+nothing for devops
 ---
-The past
+#.yellow[Lesson 1]: ownership
 ???
-When I came to the company, I believed that DevOps was a job title and actually did some research on how to become a DevOps guy.
+7:00
 
-You know, someone who is not especially developing, or operating, but “doing devops”.
+is devops a job title?
 ---
-The DevOps team
+#The DevOps team
 ???
-Little helped the fact that there was an actual team called DevOps.
+did not help
 
-To understand the story, you have to know that this team mostly worked
+legacy
 
-on the legacy part of our codebase, one that has been worked on by many people by that time
-
-and one that was actively developed my many other people.
-
-After I had the luck to spend my test days in this team, it all made sense right away.
+many people past, now
 ---
-The DevOps guy
+#The DevOps guy
 ???
-I understood that DevOps means that you are both a developer and an operations guy,
+10:00
+definition looked for
 
-developing your own tools, and
+test days here - made sense
 
-modifying the almighty production code as operation events require you to do so
+not either dev or ops
 
-- this was not necessarily a good definition.
----
-Ownership
-???
-As you can see this definition is somewhat biased towards the operations part, and
+develop own tools
 
-it lacks one of the most important parts of DevOps, ownership.
+almighty production code
+
+not good definition
+
+bias to operations
+
+no ownership
 ---
 Automation Center
 ???
@@ -199,11 +236,8 @@ As we got more and more familiar with the errors it allowed us to automate the b
 
 finally get that good night of sleep while in duty.
 ---
-The present
+#.yellow[Lesson 2]: toolchain
 ???
-I have to make a confession here: it’s actually more like the past for me, as I’m in a different team now. (Sorry Ferenc).
-
-But it’s still the recommended way to do things.
 ---
 Custom Development
 ???
@@ -266,6 +300,8 @@ not only the parts included in the nodejs package and it’s dependencies,
 but in the head of some great developers.
 
 And it was there waiting for us to use it.
+
+The present is how most of the newly developed services look like. Here, as you can see I’m talking about services. These are mostly feature services, which means that they are not as focused as a microservice, but are sized in a way that a single team can operate them. Most of these are operated on external platforms, with only some hosted inside.
 ---
 Getting the feel of it
 ???
